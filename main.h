@@ -4,6 +4,6 @@ class FirstName {
 public:
     void firstname()
     {
-        printf("firstname")
+        printf("firstname");
     };    
 };
