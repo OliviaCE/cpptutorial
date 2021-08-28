@@ -3,12 +3,19 @@
 
 int main()
 {
-    classcall();
+    firstcallfunc();
+    secondcallfunc();
     return 0;
 }
 
-void classcall()
+void firstcallfunc()
 {
-    FirstName myObj;
-    myObj FirstName.firstname();
+    MainClass theObj;
+    theObj.helloworldone();
+}
+
+void secondcallfunc()
+{
+    MainClass theObj;
+    theObj.helloworldtwo();
 }

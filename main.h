@@ -1,9 +1,17 @@
 #include <iostream>
 
-class FirstName {
+void firstcallfunc();
+void secondcallfunc();
+
+class MainClass {
 public:
-    void firstname()
+    void helloworldone()
     {
-        printf("firstname");
-    };    
+        printf("hello world one");
+    };
+
+    void helloworldtwo()
+    {
+        printf("hello world two");
+    }
 };
