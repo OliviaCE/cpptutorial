@@ -1,33 +1,45 @@
 #include <iostream>
 #include "main.h"
 
+void firstcallbackfunction()
+{
+    MyClass myObj;
+    myObj.firsthelloworld();
+}
+
+void secondcallbackfunction()
+{
+    MyClass myObj;
+    myObj.secondhelloworld();
+}
+
+void banner()
+{
+    const char banner[] = "CPP FUNCTION CALLER\n";
+
+    std::cout << banner;
+}
+
+void callbackfunction()
+{
+    int function;
+    std::cout << "Enter a number to print any function >> ";
+    std::cin >> function;
+}
+
 int main()
 {
-    int x = 1000;
+    banner();
 
-    const char name[7] = "Olivia";
+    callbackfunction();
 
-    std::cout << "My Name is " << name;
+    int x;
 
-    std::cout << "Simple OOP";
-
-    if (x == 1000) {
-        firstcallfunc();
+    if (x == 10) {
+        firstcallbackfunction();
     } else {
-        secondcallfunc();
+        secondcallbackfunction();
     }
 
     return 0;
-}
-
-void firstcallfunc()
-{
-    MainClass theObj;
-    theObj.helloworldone();
-}
-
-void secondcallfunc()
-{
-    MainClass theObj;
-    theObj.helloworldtwo();
 }
