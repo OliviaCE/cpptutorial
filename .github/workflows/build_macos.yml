@@ -1,0 +1,25 @@
+name: Building macOS x86
+
+on: [push]
+
+env:
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Deps Installing
+      run: brew install cmake gcc@11 
+
+    - name: Create LLVM Build Environment
+      run: |
+        mkdir build 
+        cd build
+        cmake .. -G Ninja
+        ninja
+        ./cpptutorial
+        
