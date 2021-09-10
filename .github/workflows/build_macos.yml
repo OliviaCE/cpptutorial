@@ -13,9 +13,9 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Deps Installing
-      run: brew install cmake gcc@11 
+      run: brew install cmake gcc@11 ninja
 
-    - name: Create LLVM Build Environment
+    - name: Build
       run: |
         mkdir build 
         cd build
