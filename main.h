@@ -1,17 +1,16 @@
-#include <iostream>
+#pragma once
 
-void firstcallfunc();
-void secondcallfunc();
+#include <stdio.h>
 
-class MainClass {
+class MyClass {
 public:
-    void helloworldone()
+    void firsthelloworld()
     {
-        printf("hello world one");
+        printf("hello world");
     };
-
-    void helloworldtwo()
+    
+    void secondhelloworld()
     {
-        printf("hello world two");
-    }
+        printf("second hello wolrd");
+    };
 };
