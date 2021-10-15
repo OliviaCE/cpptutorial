@@ -1,16 +1,16 @@
 #pragma once
 
-#include <stdio.h>
+#include <iostream>
 
 class MyClass {
 public:
     void firsthelloworld()
     {
-        printf("hello world");
+        std::cout << "First Hello World";
     };
     
     void secondhelloworld()
     {
-        printf("second hello wolrd");
+        std::cout << "Second Hello World;
     };
 };
