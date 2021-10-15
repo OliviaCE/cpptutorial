@@ -5,15 +5,17 @@
 #define TRUE 100
 #define FALSE 101
 
+using namespace std;
+
 class MyClass {
 public:
     void firsthelloworld()
     {
-        std::cout << "First Hello World";
+        cout << "First Hello World";
     };
     
     void secondhelloworld()
     {
-        std::cout << "Second Hello World;
+        cout << "Second Hello World";
     };
 };
