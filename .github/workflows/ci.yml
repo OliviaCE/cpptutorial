@@ -29,28 +29,4 @@ jobs:
           cmake .. -G Ninja
           ninja
           ./cpptutorial
-
-  buildmacos:
-    runs-on: macos-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.8"
-          architecture: "x64"
-
-      - name: Deps Installing
-        run: |
-          brew update
-          brew install cmake gcc@10 ninja
-
-      - name: Building
-        run: |
-          mkdir build
-          cd build/
-          cmake .. -G Ninja
-          ninja
-          ./cpptutorial
           
