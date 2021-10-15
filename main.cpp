@@ -13,6 +13,12 @@ void secondcallbackfunction()
     myObj.secondhelloworld();
 }
 
+void retrivedefinedvalues()
+{
+    std::cout << TRUE << std::endl;
+    std::cout << FALSE << std::endl;
+}
+
 void banner()
 {
     const char banner[] = "CPP FUNCTION CALLER\n";
@@ -40,6 +46,9 @@ int main()
     } else {
         secondcallbackfunction();
     }
+    
+    retrivedefinedvalues()
+    
 
     return 0;
 }
