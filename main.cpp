@@ -47,7 +47,7 @@ int main()
         secondcallbackfunction();
     }
     
-    retrivedefinedvalues()
+    retrivedefinedvalues();
     
 
     return 0;
