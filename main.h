@@ -2,6 +2,9 @@
 
 #include <iostream>
 
+#define TRUE 100
+#define FALSE 101
+
 class MyClass {
 public:
     void firsthelloworld()
